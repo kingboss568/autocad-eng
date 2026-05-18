@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Architectural CAD Collections | AutoCAD Blocks, Details, Templates</title>
+  <meta name="description" content="A polished English sales page for Architectural CAD Collections: AutoCAD blocks, drafting details, room templates, landscape blocks, steel details, and 500tools resources. Gumroad checkout with Cloudflare R2 download delivery.">
+  <meta name="keywords" content="AutoCAD blocks, CAD drawings, DWG library, architectural CAD collection, interior design CAD blocks, landscape CAD blocks, steel details, CAD templates, 500tools, Gumroad">
+  <meta name="author" content="CAD Designer">
+  <link rel="canonical" href="https://kingboss568.github.io/autocad-eng/">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Architectural CAD Collections">
+  <meta property="og:title" content="Architectural CAD Collections | AutoCAD Blocks, Details, Templates">
+  <meta property="og:description" content="A professional English CAD resource pack for architects, interior designers, builders, and design students. Checkout via Gumroad; secure download delivery via Cloudflare R2.">
+  <meta property="og:url" content="https://kingboss568.github.io/autocad-eng/">
+  <meta property="og:image" content="https://kingboss568.github.io/autocad-eng/assets/cad/living-room-template.jpg">
+  <meta property="product:price:amount" content="99">
+  <meta property="product:price:currency" content="USD">
+  <meta property="product:availability" content="in stock">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Architectural CAD Collections">
+  <meta name="twitter:description" content="AutoCAD blocks, details, templates, and 500tools resources for English-speaking CAD users.">
+  <meta name="twitter:image" content="https://kingboss568.github.io/autocad-eng/assets/cad/living-room-template.jpg">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1220'/%3E%3Cpath d='M13 47h38M18 41V22l14-8 14 8v19' fill='none' stroke='%23f2a63b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 41V29h6v12M36 41V29h6v12' fill='none' stroke='%232bc7d9' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Architectural CAD Collections",
+    "description": "AutoCAD blocks, architectural CAD details, interior design resources, landscape blocks, steel details, decorative elements, and 500tools resources.",
+    "brand": { "@type": "Brand", "name": "CAD Designer" },
+    "category": "CAD Resources",
+    "sku": "autocad-eng-architectural-cad-collections",
+    "image": [
+      "https://kingboss568.github.io/autocad-eng/assets/cad/living-room-template.jpg",
+      "https://kingboss568.github.io/autocad-eng/assets/cad/interior-blocks.jpg",
+      "https://kingboss568.github.io/autocad-eng/assets/cad/steel-construction.jpg"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://caddesigner.gumroad.com/l/tjnfu",
+      "priceCurrency": "USD",
+      "price": "99",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #121820;
+      --ink-2: #314152;
+      --muted: #607084;
+      --line: #dce3ea;
+      --paper: #ffffff;
+      --soft: #f4f8fb;
+      --blue: #1664d9;
+      --cyan: #1aaebf;
+      --amber: #f2a63b;
+      --green: #21885f;
+      --shadow: 0 20px 45px rgba(11, 18, 32, 0.14);
+      --radius: 8px;
+      --max: 1180px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -48px;
+      z-index: 20;
+      background: var(--ink);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 6px;
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 12px; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(220, 227, 234, 0.9);
+    }
+    .nav {
+      width: min(var(--max), calc(100% - 32px));
+      min-height: 74px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      background: #0b1220;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(11, 18, 32, .22);
+    }
+    .brand-mark svg { width: 28px; height: 28px; }
+    .brand span:last-child { display: block; line-height: 1.1; }
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+      color: var(--ink-2);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .nav-links a {
+      text-decoration: none;
+      padding: 8px 0;
+    }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .btn {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 18px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 1;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      color: #fff;
+      background: var(--blue);
+      box-shadow: 0 14px 30px rgba(22, 100, 217, .28);
+    }
+    .btn-primary:hover { background: #0f58c6; }
+    .btn-secondary {
+      color: var(--ink);
+      background: #fff;
+      border-color: var(--line);
+      box-shadow: 0 8px 20px rgba(11, 18, 32, .08);
+    }
+    .btn-dark {
+      color: #fff;
+      background: #0b1220;
+      box-shadow: 0 14px 30px rgba(11, 18, 32, .24);
+    }
+    .section {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 82px 0;
+    }
+    .hero {
+      width: min(1320px, calc(100% - 32px));
+      margin: 0 auto;
+      min-height: min(760px, calc(100vh - 74px));
+      display: grid;
+      grid-template-columns: minmax(0, 0.98fr) minmax(420px, 1.02fr);
+      gap: clamp(28px, 4vw, 60px);
+      align-items: center;
+      padding: 42px 0 38px;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 780px;
+      font-size: clamp(42px, 5.2vw, 68px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    .hero-copy {
+      margin: 24px 0 0;
+      max-width: 650px;
+      color: var(--ink-2);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .micro-note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .hero-proof {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 650px;
+    }
+    .proof-item {
+      border-top: 2px solid var(--line);
+      padding-top: 12px;
+    }
+    .proof-item strong {
+      display: block;
+      color: var(--ink);
+      font-size: 22px;
+      line-height: 1.1;
+    }
+    .proof-item span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .hero-visual {
+      position: relative;
+      min-height: 540px;
+      display: grid;
+      align-items: center;
+    }
+    .blueprint-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #0b1220;
+      box-shadow: var(--shadow);
+      min-height: 500px;
+      border: 1px solid rgba(255, 255, 255, .1);
+    }
+    .blueprint-frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+      background-size: 38px 38px;
+      opacity: .65;
+      pointer-events: none;
+    }
+    .feature-shot {
+      position: absolute;
+      inset: 26px 26px auto auto;
+      width: min(72%, 540px);
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 7px;
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: 0 22px 50px rgba(0,0,0,.34);
+    }
+    .thumb-stack {
+      position: absolute;
+      left: 26px;
+      bottom: 26px;
+      display: grid;
+      grid-template-columns: repeat(2, 132px);
+      gap: 12px;
+    }
+    .thumb-stack img {
+      width: 132px;
+      height: 98px;
+      object-fit: cover;
+      border-radius: 7px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: #fff;
+    }
+    .floating-spec {
+      position: absolute;
+      left: 26px;
+      top: 34px;
+      width: min(260px, calc(100% - 52px));
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 18px 42px rgba(0,0,0,.24);
+    }
+    .floating-spec strong {
+      display: block;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: var(--muted);
+    }
+    .floating-spec b {
+      display: block;
+      margin-top: 6px;
+      font-size: 28px;
+      line-height: 1;
+    }
+    .floating-spec p {
+      margin: 10px 0 0;
+      color: var(--ink-2);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .trust-band {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+    }
+    .trust-grid {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+    }
+    .trust-item {
+      padding: 28px 24px;
+      background: rgba(255,255,255,.68);
+    }
+    .trust-item strong { display: block; font-size: 15px; }
+    .trust-item span {
+      display: block;
+      color: var(--muted);
+      margin-top: 5px;
+      font-size: 13px;
+    }
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 34px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(32px, 4.6vw, 56px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    .section-head p {
+      margin: 16px 0 0;
+      color: var(--ink-2);
+      font-size: 18px;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      gap: clamp(28px, 5vw, 70px);
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(11,18,32,.08);
+    }
+    .audit-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+    .audit-list li {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 12px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .audit-list li:last-child { border-bottom: 0; }
+    .number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #e8f2ff;
+      color: var(--blue);
+      font-weight: 900;
+      font-size: 13px;
+    }
+    .audit-list strong { display: block; }
+    .audit-list span { color: var(--muted); font-size: 14px; }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .category-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(11,18,32,.07);
+    }
+    .category-card img {
+      width: 100%;
+      aspect-ratio: 5 / 3;
+      object-fit: cover;
+      background: #eef3f8;
+    }
+    .category-card div { padding: 18px; }
+    .category-card h3 { margin: 0; font-size: 19px; line-height: 1.25; }
+    .category-card p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+    }
+    .gallery-main,
+    .gallery-side {
+      display: grid;
+      gap: 16px;
+    }
+    .gallery figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(11,18,32,.08);
+    }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; }
+    .gallery-main figure { min-height: 460px; }
+    .gallery-side figure { min-height: 222px; }
+    figcaption {
+      padding: 12px 14px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      background: #fff;
+      border-top: 1px solid var(--line);
+    }
+    .tools-band {
+      width: 100%;
+      background: #0b1220;
+      color: #fff;
+      margin-top: 30px;
+    }
+    .tools-band .section { padding: 86px 0; }
+    .tools-band .section-head p { color: #b7c5d6; }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .tool-card {
+      min-height: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      text-decoration: none;
+      transition: transform .18s ease, background .18s ease;
+    }
+    .tool-card:hover { transform: translateY(-2px); background: rgba(255,255,255,.13); }
+    .tool-card strong { font-size: 18px; line-height: 1.2; }
+    .tool-card span { color: #b7c5d6; font-size: 13px; }
+    .delivery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .step-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .step-card h3 { margin: 0; font-size: 22px; }
+    .step-card p { color: var(--muted); margin: 10px 0 0; }
+    .buy-section {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto 86px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 34px;
+      align-items: center;
+      padding: clamp(28px, 5vw, 46px);
+      background: linear-gradient(135deg, #0b1220 0%, #16283f 56%, #11323b 100%);
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .buy-section h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+    }
+    .buy-section p {
+      max-width: 740px;
+      margin: 14px 0 0;
+      color: #c7d5e5;
+    }
+    .price-card {
+      width: 300px;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.22);
+    }
+    .price-card strong {
+      display: block;
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    .price-card span {
+      display: block;
+      color: var(--muted);
+      margin: 8px 0 18px;
+      font-weight: 700;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 20px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: var(--ink);
+    }
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: var(--soft);
+      padding: 34px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .footer-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .footer-inner a { color: var(--ink); font-weight: 800; text-decoration: none; }
+    .sticky-buy {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 12;
+      display: none;
+    }
+    @media (max-width: 980px) {
+      .nav { grid-template-columns: auto auto; justify-content: space-between; }
+      .nav-links { display: none; }
+      .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding-top: 42px;
+      }
+      .hero-visual { min-height: 520px; }
+      .blueprint-frame { min-height: 500px; }
+      .trust-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .split,
+      .gallery,
+      .delivery,
+      .buy-section { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .price-card { width: 100%; max-width: 360px; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 15px; }
+      .section { padding: 58px 0; }
+      .nav {
+        width: calc(100% - 24px);
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 10px;
+      }
+      .brand { min-width: 0; }
+      .brand span:last-child {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .brand small { display: none; }
+      .nav-actions .btn-secondary { display: none; }
+      .nav-actions .btn-primary {
+        width: 58px;
+        padding: 0;
+        overflow: hidden;
+        color: transparent;
+        position: relative;
+        white-space: nowrap;
+      }
+      .nav-actions .btn-primary::after {
+        content: "Buy";
+        color: #fff;
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+      }
+      .hero h1 { font-size: 38px; line-height: 1.04; }
+      .hero-copy { font-size: 17px; }
+      .hero-proof,
+      .trust-grid,
+      .category-grid,
+      .tools-grid,
+      .faq-grid { grid-template-columns: 1fr; }
+      .hero-visual { min-height: 420px; }
+      .blueprint-frame { min-height: 400px; }
+      .feature-shot {
+        inset: 18px 18px auto 18px;
+        width: auto;
+      }
+      .floating-spec {
+        left: 18px;
+        top: auto;
+        bottom: 18px;
+      }
+      .thumb-stack { display: none; }
+      .gallery-main figure,
+      .gallery-side figure { min-height: 260px; }
+      .sticky-buy.is-visible { display: block; }
+      .sticky-buy .btn { min-height: 48px; padding-inline: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Architectural CAD Collections home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 30h24M11 27V15l9-6 9 6v12" stroke="#f2a63b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 27v-8h4v8M24 27v-8h4v8" stroke="#2bc7d9" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Architectural CAD<small>Collections for AutoCAD users</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#library">Library</a>
+        <a href="#gallery">Preview</a>
+        <a href="#tools">500tools</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="500tools/">500tools</a>
+        <a class="btn btn-primary js-buy-link" href="https://caddesigner.gumroad.com/l/tjnfu" target="_blank" rel="noopener">Buy on Gumroad</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Architectural CAD Collections for faster AutoCAD production.</h1>
+        <p class="hero-copy">A cleaned-up English storefront for a practical CAD resource pack: blocks, details, elevations, room templates, landscape resources, steel construction details, and a 500tools companion directory for daily drafting work.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary js-buy-link" href="https://caddesigner.gumroad.com/l/tjnfu" target="_blank" rel="noopener">Buy on Gumroad</a>
+          <a class="btn btn-secondary" href="#library">See what's inside</a>
+        </div>
+        <p class="micro-note">Checkout is Gumroad-only. After purchase, buyers receive a secure download link for the Cloudflare R2 hosted product file.</p>
+        <div class="hero-proof" aria-label="Product highlights">
+          <div class="proof-item"><strong>$99</strong><span>USD launch price</span></div>
+          <div class="proof-item"><strong>225.7 MiB</strong><span>verified product zip</span></div>
+          <div class="proof-item"><strong>R2</strong><span>private delivery ready</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="CAD collection preview">
+        <div class="blueprint-frame">
+          <img class="feature-shot" src="assets/cad/living-room-template.jpg" alt="Living room CAD template preview">
+          <div class="floating-spec">
+            <strong>Product file</strong>
+            <b>01-Architectural CAD Collections.zip</b>
+            <p>SHA-256 verified in the repo docs. Upload this file to Cloudflare R2, not to the public Git repository.</p>
+          </div>
+          <div class="thumb-stack" aria-hidden="true">
+            <img src="assets/cad/interior-blocks.jpg" alt="">
+            <img src="assets/cad/steel-construction.jpg" alt="">
+            <img src="assets/cad/landscape-blocks.jpg" alt="">
+            <img src="assets/cad/decorative-tile.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-band" aria-label="Commerce and delivery highlights">
+      <div class="trust-grid">
+        <div class="trust-item"><strong>Gumroad checkout</strong><span>Built for international buyers and card payments.</span></div>
+        <div class="trust-item"><strong>Cloudflare R2 delivery</strong><span>Product zip stays private and outside GitHub.</span></div>
+        <div class="trust-item"><strong>English-first copy</strong><span>Legacy Taiwan-facing content has been rewritten for western users.</span></div>
+        <div class="trust-item"><strong>500tools included</strong><span>Companion tool pages are now English and product aligned.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="library">
+      <div class="split">
+        <div class="section-head">
+          <h2>Built from the old CAD shop, rebuilt for a modern buyer.</h2>
+          <p>The original site had many table-based product pages, legacy checkout buttons, remote images, and mixed-language fragments. This version turns that inventory into a clear English offer with a single Gumroad checkout path.</p>
+        </div>
+        <ul class="audit-list">
+          <li><span class="number">1</span><span><strong>One product story</strong><span>The buyer sees the complete Architectural CAD Collections bundle instead of wandering through hundreds of old pages.</span></span></li>
+          <li><span class="number">2</span><span><strong>One payment method</strong><span>Legacy payment messaging is removed. The site routes buyers to Gumroad only.</span></span></li>
+          <li><span class="number">3</span><span><strong>One delivery model</strong><span>R2 keeps the actual product zip private; a secure download URL can be emailed after payment.</span></span></li>
+          <li><span class="number">4</span><span><strong>One English tool hub</strong><span>The 500tools entry points are written for architects, interior designers, MEP coordinators, landscape teams, and property workflows.</span></span></li>
+        </ul>
+      </div>
+
+      <div class="category-grid" style="margin-top:44px">
+        <article class="category-card">
+          <img src="assets/cad/interior-blocks.jpg" alt="Interior 2D CAD blocks preview">
+          <div><h3>Interior 2D blocks</h3><p>Furniture, bathrooms, lighting, equipment, and repeatable symbols for quick layout drafting.</p></div>
+        </article>
+        <article class="category-card">
+          <img src="assets/cad/landscape-blocks.jpg" alt="Landscape CAD blocks preview">
+          <div><h3>Landscape and site resources</h3><p>Outdoor plans, planting support, paving patterns, and site composition details.</p></div>
+        </article>
+        <article class="category-card">
+          <img src="assets/cad/steel-construction.jpg" alt="Steel construction CAD details preview">
+          <div><h3>Structure and details</h3><p>Steel construction, accessibility, plumbing, roof, floor, wood, and ceiling drafting references.</p></div>
+        </article>
+        <article class="category-card">
+          <img src="assets/cad/decorative-tile.jpg" alt="Decorative tile CAD elements preview">
+          <div><h3>Decorative elements</h3><p>Classical ornaments, tile patterns, paving, columns, and facade enhancement details.</p></div>
+        </article>
+        <article class="category-card">
+          <img src="assets/cad/electrical-blocks.jpg" alt="Electrical CAD blocks preview">
+          <div><h3>MEP drafting blocks</h3><p>Electrical, lighting, bathroom, and coordination symbols for production drawings.</p></div>
+        </article>
+        <article class="category-card">
+          <img src="assets/cad/luxury-living-template.jpg" alt="Luxury living room CAD template preview">
+          <div><h3>Room templates</h3><p>Living rooms, entrances, restaurants, and interior design templates for concept-to-drawing workflows.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <h2>Preview the visual range before checkout.</h2>
+        <p>These samples show the kind of CAD references and design templates represented in the collection. The downloadable product file is distributed privately after purchase.</p>
+      </div>
+      <div class="gallery">
+        <div class="gallery-main">
+          <figure>
+            <img src="assets/cad/luxury-living-template.jpg" alt="Luxury living room CAD template sample">
+            <figcaption>Interior template preview</figcaption>
+          </figure>
+        </div>
+        <div class="gallery-side">
+          <figure>
+            <img src="assets/cad/classical-elements.jpg" alt="Classical decorative CAD elements sample">
+            <figcaption>Classical elements</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/cad/bathroom-blocks.jpg" alt="Bathroom CAD block sample">
+            <figcaption>Bathroom blocks</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools-band" id="tools">
+      <div class="section">
+        <div class="section-head">
+          <h2>500tools is now an English companion hub.</h2>
+          <p>The old 500tools section has been rebuilt as a simple English directory that supports the product: drafting references, room planning prompts, MEP coordination checklists, landscape planning, and real estate due-diligence utilities.</p>
+        </div>
+        <div class="tools-grid">
+          <a class="tool-card" href="500tools/arch.html"><strong>Architecture</strong><span>Scale checks, drawing set QA, code-note prompts, and detail review.</span></a>
+          <a class="tool-card" href="500tools/interior.html"><strong>Interior</strong><span>Room planning, furniture schedules, finish notes, and fixture coordination.</span></a>
+          <a class="tool-card" href="500tools/landscape.html"><strong>Landscape</strong><span>Site planning, paving, planting, grading notes, and outdoor details.</span></a>
+          <a class="tool-card" href="500tools/mep.html"><strong>MEP</strong><span>Electrical, lighting, bathroom, plumbing, and coordination reminders.</span></a>
+          <a class="tool-card" href="500tools/realestate.html"><strong>Real Estate</strong><span>Space planning, due diligence, area summaries, and listing prep.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="delivery">
+      <div class="section-head">
+        <h2>Payment and delivery follow the BOSS888 model, with Gumroad only.</h2>
+        <p>The storefront stays static and fast. Gumroad handles checkout. Cloudflare R2 stores the private zip. The post-purchase flow emails a download link after payment confirmation.</p>
+      </div>
+      <div class="delivery">
+        <article class="step-card"><h3>1. Upload product zip to R2</h3><p>Use the verified file listed in <strong>R2_DELIVERY.md</strong>. Keep the bucket private and generate signed URLs or time-limited download URLs.</p></article>
+        <article class="step-card"><h3>2. Connect Gumroad sale event</h3><p>Use Gumroad Resource Subscriptions or a Ping-style webhook so a sale event reaches a Cloudflare Worker endpoint.</p></article>
+        <article class="step-card"><h3>3. Worker creates the link</h3><p>The Worker verifies the sale, creates a private R2 download URL, stores a fulfillment record, and sends an email with the link.</p></article>
+        <article class="step-card"><h3>4. Buyer receives English instructions</h3><p>The email should include product name, download expiry, support email, file size, and the SHA-256 checksum.</p></article>
+      </div>
+    </section>
+
+    <section class="buy-section" id="buy" aria-labelledby="buy-title">
+      <div>
+        <h2 id="buy-title">Ready-to-use CAD resources for serious drafting work.</h2>
+        <p>Buy through Gumroad, then receive the private Cloudflare R2 download link after payment confirmation. The product file is intentionally not committed to this public repository.</p>
+      </div>
+      <aside class="price-card" aria-label="Price and purchase">
+        <strong>$99</strong>
+        <span>USD one-time purchase</span>
+        <a class="btn btn-primary js-buy-link" href="https://caddesigner.gumroad.com/l/tjnfu" target="_blank" rel="noopener" style="width:100%">Buy on Gumroad</a>
+        <p class="micro-note">Support: <a href="mailto:kingboss568@gmail.com">kingboss568@gmail.com</a></p>
+      </aside>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head">
+        <h2>Questions buyers usually ask.</h2>
+        <p>Clear English answers reduce support work and make the international checkout feel trustworthy.</p>
+      </div>
+      <div class="faq-grid">
+        <details open>
+          <summary>Do I receive the CAD files immediately?</summary>
+          <p>After Gumroad confirms the purchase, the delivery system emails a private download link. The R2 link should be time-limited so the product zip is not publicly exposed.</p>
+        </details>
+        <details>
+          <summary>Why is the product file not on GitHub?</summary>
+          <p>The public GitHub repository contains the storefront only. The paid digital product is stored privately on Cloudflare R2 and delivered after payment.</p>
+        </details>
+        <details>
+          <summary>Can I use the drawings directly in a project?</summary>
+          <p>Use them as drafting resources and references. Always review layers, dimensions, local codes, engineering requirements, licensing, and project-specific standards before professional use.</p>
+        </details>
+        <details>
+          <summary>What changed from the old site?</summary>
+          <p>The old multi-page HTML shop was consolidated into an English sales page, the payment path was simplified to Gumroad, and 500tools was rewritten as an English companion directory.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Architectural CAD Collections. CAD resources are auxiliary drafting references and do not constitute legal, engineering, code-compliance, or professional design advice.</span>
+      <span><a href="500tools/">500tools</a> · <a href="mailto:kingboss568@gmail.com">Support</a> · <a class="js-buy-link" href="https://caddesigner.gumroad.com/l/tjnfu" target="_blank" rel="noopener">Gumroad</a></span>
+    </div>
+  </footer>
+
+  <div class="sticky-buy">
+    <a class="btn btn-primary js-buy-link" href="https://caddesigner.gumroad.com/l/tjnfu" target="_blank" rel="noopener">Buy</a>
+  </div>
+
+  <script>
+    const SITE_CONFIG = {
+      gumroadUrl: "https://caddesigner.gumroad.com/l/tjnfu",
+      supportEmail: "kingboss568@gmail.com"
+    };
+
+    for (const link of document.querySelectorAll(".js-buy-link")) {
+      link.href = SITE_CONFIG.gumroadUrl;
+      link.addEventListener("click", () => {
+        try {
+          localStorage.setItem("autocad-eng-last-checkout-click", new Date().toISOString());
+        } catch (error) {
+          // Checkout must never depend on localStorage.
+        }
+      });
+    }
+
+    const stickyBuy = document.querySelector(".sticky-buy");
+    const updateStickyBuy = () => {
+      if (!stickyBuy) return;
+      stickyBuy.classList.toggle("is-visible", window.innerWidth <= 640 && window.scrollY > 520);
+    };
+    updateStickyBuy();
+    window.addEventListener("scroll", updateStickyBuy, { passive: true });
+    window.addEventListener("resize", updateStickyBuy);
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+name = "autocad-eng-delivery"
+main = "gumroad-r2-delivery.js"
+compatibility_date = "2026-05-18"
+
+[[r2_buckets]]
+binding = "PRODUCT_BUCKET"
+bucket_name = "autocad-eng-products"
+
+[[kv_namespaces]]
+binding = "FULFILLMENT_KV"
+id = "replace_with_kv_namespace_id"
+
+[vars]
+PRODUCT_OBJECT_KEY = "01-Architectural CAD Collections.zip"
+PRODUCT_SHA256 = "bbaf1de88bba38a83193c4a80cb5fec770e1e135bdf5c503dddfb326f2421415"
+DOWNLOAD_TTL_SECONDS = "604800"
+SUPPORT_EMAIL = "kingboss568@gmail.com"
+
+# Set secrets with wrangler, never commit them:
+# wrangler secret put GUMROAD_ACCESS_TOKEN
+# wrangler secret put RESEND_API_KEY
+# wrangler secret put FROM_EMAIL
