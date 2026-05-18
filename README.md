@@ -9,6 +9,7 @@ This repo is designed for GitHub Pages or Cloudflare Pages. It contains the publ
 - Replaced the old product-folder structure with a polished English single-page storefront.
 - Removed PayPal and ECPay messaging from the buyer flow.
 - Uses Gumroad as the only checkout CTA.
+- Imports the full public product-preview gallery from the BOSS888 reference package: `395` images across `30` product tabs.
 - Documents the private Cloudflare R2 delivery model for the paid product file.
 - Rebuilt `500tools` as English companion pages.
 - Added SEO, Open Graph, product JSON-LD, responsive layout, FAQ, support email, and professional-use disclaimer.
@@ -18,6 +19,7 @@ This repo is designed for GitHub Pages or Cloudflare Pages. It contains the publ
 - `index.html` - main English product page.
 - `500tools/` - English tool hub and category pages.
 - `assets/cad/` - public preview images only.
+- `gallery-data.js` - categorized product-preview data for the tabbed storefront gallery.
 - `R2_DELIVERY.md` - product-file upload and fulfillment checklist.
 - `cloudflare-worker/` - optional Gumroad webhook to R2 download Worker example.
 - `_headers` - Cloudflare Pages security/cache headers.

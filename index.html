@@ -25,6 +25,7 @@
   <meta name="twitter:image" content="https://kingboss568.github.io/autocad-eng/assets/cad/living-room-template.jpg">
   <meta name="theme-color" content="#0b1220">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1220'/%3E%3Cpath d='M13 47h38M18 41V22l14-8 14 8v19' fill='none' stroke='%23f2a63b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 41V29h6v12M36 41V29h6v12' fill='none' stroke='%232bc7d9' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script src="gallery-data.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,6 +91,17 @@
       transition: top .2s ease;
     }
     .skip-link:focus { top: 12px; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
     .site-header {
       position: sticky;
       top: 0;
@@ -454,6 +466,188 @@
       background: #fff;
       border-top: 1px solid var(--line);
     }
+    .preview-shell {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 14px 36px rgba(11,18,32,.08);
+      overflow: hidden;
+    }
+    .preview-toolbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+    }
+    .search-field {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 0 14px;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+      outline: none;
+    }
+    .search-field:focus {
+      border-color: rgba(22,100,217,.55);
+      box-shadow: 0 0 0 4px rgba(22,100,217,.12);
+    }
+    .gallery-count {
+      color: var(--muted);
+      font-weight: 800;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+    .tab-strip {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      scrollbar-width: thin;
+    }
+    .tab-button {
+      flex: 0 0 auto;
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 14px;
+      background: #fff;
+      color: var(--ink-2);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 850;
+      cursor: pointer;
+      transition: background .18s ease, color .18s ease, border-color .18s ease;
+    }
+    .tab-button[aria-selected="true"] {
+      background: #0b1220;
+      color: #fff;
+      border-color: #0b1220;
+    }
+    .tab-button span {
+      color: inherit;
+      opacity: .72;
+      margin-left: 5px;
+    }
+    .gallery-panel {
+      padding: 18px;
+    }
+    .gallery-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+    .gallery-title-row h3 {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.08;
+    }
+    .gallery-title-row p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .preview-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+      cursor: zoom-in;
+      text-align: left;
+      padding: 0;
+      font: inherit;
+      color: inherit;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .preview-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(22,100,217,.45);
+      box-shadow: 0 14px 30px rgba(11,18,32,.1);
+    }
+    .preview-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #eef3f8;
+    }
+    .preview-card span {
+      min-height: 54px;
+      display: block;
+      padding: 10px 12px;
+      color: var(--ink-2);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .empty-gallery {
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 34px;
+      color: var(--muted);
+      text-align: center;
+      background: var(--soft);
+    }
+    .gallery-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 26px;
+      background: rgba(5, 10, 18, .82);
+    }
+    .gallery-modal.is-open { display: flex; }
+    .modal-frame {
+      width: min(1120px, 100%);
+      max-height: calc(100vh - 52px);
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 28px 70px rgba(0,0,0,.4);
+    }
+    .modal-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .modal-head strong { line-height: 1.2; }
+    .modal-close {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .modal-frame img {
+      width: 100%;
+      height: 100%;
+      max-height: calc(100vh - 122px);
+      object-fit: contain;
+      background: #0b1220;
+    }
     .tools-band {
       width: 100%;
       background: #0b1220;
@@ -598,6 +792,7 @@
       .buy-section { grid-template-columns: 1fr; }
       .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .preview-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .price-card { width: 100%; max-width: 360px; }
     }
     @media (max-width: 640px) {
@@ -654,6 +849,11 @@
       .thumb-stack { display: none; }
       .gallery-main figure,
       .gallery-side figure { min-height: 260px; }
+      .preview-toolbar,
+      .gallery-title-row { grid-template-columns: 1fr; display: grid; }
+      .preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .preview-card span { min-height: 48px; font-size: 11px; padding: 9px; }
+      .gallery-modal { padding: 12px; }
       .sticky-buy.is-visible { display: block; }
       .sticky-buy .btn { min-height: 48px; padding-inline: 18px; }
     }
@@ -773,25 +973,27 @@
 
     <section class="section" id="gallery">
       <div class="section-head">
-        <h2>Preview the visual range before checkout.</h2>
-        <p>These samples show the kind of CAD references and design templates represented in the collection. The downloadable product file is distributed privately after purchase.</p>
+        <h2>Browse every product preview before checkout.</h2>
+        <p>Customers can switch product tabs, search by keyword, and click any preview to inspect the CAD detail at a larger size. The complete paid zip is still delivered privately after purchase.</p>
       </div>
-      <div class="gallery">
-        <div class="gallery-main">
-          <figure>
-            <img src="assets/cad/luxury-living-template.jpg" alt="Luxury living room CAD template sample">
-            <figcaption>Interior template preview</figcaption>
-          </figure>
+      <div class="preview-shell" aria-live="polite">
+        <div class="preview-toolbar">
+          <label>
+            <span class="sr-only">Search product previews</span>
+            <input class="search-field" id="gallerySearch" type="search" placeholder="Search previews, for example living room, steel, landscape, bathroom">
+          </label>
+          <span class="gallery-count" id="galleryCount">Loading previews...</span>
         </div>
-        <div class="gallery-side">
-          <figure>
-            <img src="assets/cad/classical-elements.jpg" alt="Classical decorative CAD elements sample">
-            <figcaption>Classical elements</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/cad/bathroom-blocks.jpg" alt="Bathroom CAD block sample">
-            <figcaption>Bathroom blocks</figcaption>
-          </figure>
+        <div class="tab-strip" id="galleryTabs" role="tablist" aria-label="Product preview categories"></div>
+        <div class="gallery-panel">
+          <div class="gallery-title-row">
+            <div>
+              <h3 id="activeGalleryTitle">All CAD previews</h3>
+              <p id="activeGalleryDescription">Full product preview library grouped from the source package.</p>
+            </div>
+            <a class="btn btn-primary js-buy-link" href="https://caddesigner.gumroad.com/l/tjnfu" target="_blank" rel="noopener">Buy on Gumroad</a>
+          </div>
+          <div class="preview-grid" id="previewGrid"></div>
         </div>
       </div>
     </section>
@@ -875,11 +1077,36 @@
     <a class="btn btn-primary js-buy-link" href="https://caddesigner.gumroad.com/l/tjnfu" target="_blank" rel="noopener">Buy</a>
   </div>
 
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true" role="dialog" aria-label="Product preview detail">
+    <div class="modal-frame">
+      <div class="modal-head">
+        <strong id="modalTitle">Product preview</strong>
+        <button class="modal-close" type="button" id="modalClose" aria-label="Close preview">×</button>
+      </div>
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
+
   <script>
     const SITE_CONFIG = {
       gumroadUrl: "https://caddesigner.gumroad.com/l/tjnfu",
       supportEmail: "kingboss568@gmail.com"
     };
+    const galleryState = {
+      activeGroup: "all",
+      query: ""
+    };
+    const gallery = window.CAD_GALLERY || { groups: [], total: 0 };
+    const galleryTabs = document.getElementById("galleryTabs");
+    const galleryGrid = document.getElementById("previewGrid");
+    const gallerySearch = document.getElementById("gallerySearch");
+    const galleryCount = document.getElementById("galleryCount");
+    const activeGalleryTitle = document.getElementById("activeGalleryTitle");
+    const activeGalleryDescription = document.getElementById("activeGalleryDescription");
+    const galleryModal = document.getElementById("galleryModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalImage = document.getElementById("modalImage");
+    const modalClose = document.getElementById("modalClose");
 
     for (const link of document.querySelectorAll(".js-buy-link")) {
       link.href = SITE_CONFIG.gumroadUrl;
@@ -891,6 +1118,108 @@
         }
       });
     }
+
+    const allPreviewItems = gallery.groups.flatMap(group =>
+      group.items.map(item => ({
+        ...item,
+        groupId: group.id,
+        groupLabel: group.label
+      }))
+    );
+
+    function renderTabs() {
+      if (!galleryTabs) return;
+      const tabs = [
+        { id: "all", label: "All previews", count: allPreviewItems.length },
+        ...gallery.groups.map(group => ({ id: group.id, label: group.label, count: group.items.length }))
+      ];
+      galleryTabs.innerHTML = tabs.map(tab => `
+        <button class="tab-button" type="button" role="tab" aria-selected="${tab.id === galleryState.activeGroup}" data-gallery-tab="${tab.id}">
+          ${tab.label}<span>${tab.count}</span>
+        </button>
+      `).join("");
+    }
+
+    function getActiveItems() {
+      const baseItems = galleryState.activeGroup === "all"
+        ? allPreviewItems
+        : allPreviewItems.filter(item => item.groupId === galleryState.activeGroup);
+      const query = galleryState.query.trim().toLowerCase();
+      if (!query) return baseItems;
+      return baseItems.filter(item =>
+        `${item.title} ${item.groupLabel} ${item.original}`.toLowerCase().includes(query)
+      );
+    }
+
+    function renderGallery() {
+      if (!galleryGrid) return;
+      const activeGroup = gallery.groups.find(group => group.id === galleryState.activeGroup);
+      const items = getActiveItems();
+      activeGalleryTitle.textContent = activeGroup ? activeGroup.label : "All CAD previews";
+      activeGalleryDescription.textContent = activeGroup
+        ? `${activeGroup.count} preview images in this product category. Click any image to inspect the detail.`
+        : `${allPreviewItems.length} preview images across ${gallery.groups.length} product categories.`;
+      galleryCount.textContent = `${items.length} shown / ${allPreviewItems.length} total`;
+      if (!items.length) {
+        galleryGrid.innerHTML = `<div class="empty-gallery">No previews match this search. Try another product name or clear the search field.</div>`;
+        return;
+      }
+      galleryGrid.innerHTML = items.map((item, index) => `
+        <button class="preview-card" type="button" data-preview-index="${index}" data-preview-src="${item.src}" data-preview-title="${item.groupLabel} - ${item.title}">
+          <img src="${item.src}" alt="${item.title}" loading="lazy">
+          <span>${item.title}</span>
+        </button>
+      `).join("");
+    }
+
+    renderTabs();
+    renderGallery();
+
+    if (location.hash === "#gallery") {
+      requestAnimationFrame(() => {
+        document.getElementById("gallery")?.scrollIntoView({ block: "start" });
+      });
+    }
+
+    galleryTabs?.addEventListener("click", event => {
+      const button = event.target.closest("[data-gallery-tab]");
+      if (!button) return;
+      galleryState.activeGroup = button.dataset.galleryTab;
+      renderTabs();
+      renderGallery();
+    });
+
+    gallerySearch?.addEventListener("input", event => {
+      galleryState.query = event.target.value;
+      renderGallery();
+    });
+
+    galleryGrid?.addEventListener("click", event => {
+      const card = event.target.closest(".preview-card");
+      if (!card) return;
+      modalTitle.textContent = card.dataset.previewTitle || "Product preview";
+      modalImage.src = card.dataset.previewSrc;
+      modalImage.alt = card.dataset.previewTitle || "Product preview";
+      galleryModal.classList.add("is-open");
+      galleryModal.setAttribute("aria-hidden", "false");
+      modalClose.focus();
+    });
+
+    function closeGalleryModal() {
+      galleryModal.classList.remove("is-open");
+      galleryModal.setAttribute("aria-hidden", "true");
+      modalImage.removeAttribute("src");
+    }
+
+    modalClose?.addEventListener("click", closeGalleryModal);
+    galleryModal?.addEventListener("click", event => {
+      if (event.target === galleryModal) closeGalleryModal();
+    });
+    window.addEventListener("keydown", event => {
+      if (event.key === "Escape" && galleryModal?.classList.contains("is-open")) {
+        closeGalleryModal();
+      }
+    });
 
     const stickyBuy = document.querySelector(".sticky-buy");
     const updateStickyBuy = () => {
