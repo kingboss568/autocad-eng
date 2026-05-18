@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kingboss568.github.io/autocad-eng/sitemap.xml
+Sitemap: https://autocadeng.boss888.net/sitemap.xml

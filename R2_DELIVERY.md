@@ -75,6 +75,12 @@ DOWNLOAD_TTL_SECONDS=604800
 SUPPORT_EMAIL=kingboss568@gmail.com
 ```
 
+Recommended public site domain:
+
+```text
+https://autocadeng.boss888.net/
+```
+
 ## Buyer Email Content
 
 The email should include:

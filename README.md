@@ -2,6 +2,12 @@
 
 English storefront for the AutoCAD/CAD resource product previously published as a legacy multi-page HTML shop.
 
+Production domain:
+
+```text
+https://autocadeng.boss888.net/
+```
+
 This repo is designed for GitHub Pages or Cloudflare Pages. It contains the public storefront, English 500tools pages, Cloudflare delivery Worker example, and deployment notes. It does **not** contain the paid product zip.
 
 ## What Changed
@@ -24,6 +30,7 @@ This repo is designed for GitHub Pages or Cloudflare Pages. It contains the publ
 - `cloudflare-worker/` - optional Gumroad webhook to R2 download Worker example.
 - `_headers` - Cloudflare Pages security/cache headers.
 - `robots.txt` and `sitemap.xml` - baseline crawler files.
+- `CNAME` - GitHub Pages custom domain target: `autocadeng.boss888.net`.
 
 ## Product File
 
@@ -64,6 +71,14 @@ See `R2_DELIVERY.md` and `cloudflare-worker/`.
 
 Use branch `main` and root folder `/`.
 
+Custom domain:
+
+```text
+autocadeng.boss888.net
+```
+
+DNS should point this host to the GitHub Pages target for `kingboss568.github.io` unless Cloudflare Pages is used instead.
+
 ### Cloudflare Pages
 
 Use these settings:
@@ -72,12 +87,13 @@ Use these settings:
 - Build command: leave empty
 - Build output directory: `/`
 
-After the user assigns a domain, update:
+Current production domain has already been applied to:
 
 - `index.html` canonical URL
 - Open Graph URL and image URLs
 - `sitemap.xml`
-- Cloudflare Pages custom domain
+- `robots.txt`
+- `CNAME`
 
 ## Disclaimer
 
